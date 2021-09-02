@@ -1,11 +1,12 @@
 {
     "name": "vira-i18n-react",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "description": "Internationalization project for ReactJS",
     "main": "lib/index.js",
     "module": "lib/index.js",
+    "type": "module",
     "scripts": {
-        "build": "tsc --outDir dist/lib --declarationDir dist/types --declaration true && rollup --config rollup.config.js",
+        "build": "rollup --config rollup.config.js",
         "lint": "npm run lint:code && npm run lint:style",
         "lint:code": "eslint src/**/*.{js,ts,tsx} --fix --quiet"
     },
@@ -48,6 +49,6 @@
     "dependencies": {
         "react": "^16.14.0",
         "react-dom": "^16.14.0",
-        "vira-i18n": "../vira-i18n"
+        "vira-i18n": "^1.0.3"
     }
 }
